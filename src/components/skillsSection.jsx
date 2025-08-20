@@ -21,8 +21,8 @@ const SkillsArray = [
 
 function SkillsSection() {
   return (
-    <div className="w-full h-auto flex flex-col gap-4">
-      <h1 className="text-2xl font-bold text-white">Skills</h1>
+    <div className="w-full h-auto flex flex-col gap-4 mb-18 lg:mb-0">
+      <h1 className="text-xl lg:text-2xl font-bold text-white">Skills</h1>
       <div className="flex flex-wrap gap-2">
         {SkillsArray.map((skill, index) => (
           <Tile key={index} data={skill} />
