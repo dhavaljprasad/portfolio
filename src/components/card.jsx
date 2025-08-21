@@ -15,7 +15,7 @@ function Card({ data }) {
           <h2 className="text-sm font-bold text-white sm:text-md lg:text-lg">
             {data.name}
           </h2>
-          <p className="text-xs text-gray-400 sm:text-md lg:text-md">
+          <p className="text-sm text-gray-400 sm:text-md lg:text-md">
             {data.role}
           </p>
         </div>
