@@ -4,14 +4,16 @@ import Card from "./card";
 
 const PlacesArray = [
   {
-    img: "https://media.licdn.com/dms/image/v2/D4D0BAQEO2nm_9abw4w/company-logo_200_200/company-logo_200_200/0/1694915161576/cleandirty_logo?e=1758758400&v=beta&t=FxsOwxsQ-MXoCLwbFKF2NcaDb6NWafrPfJaqhmCgRUM",
-    name: "Clean Dirty Narrative",
+    img: "https://res.cloudinary.com/dli14hm5i/image/upload/v1759164993/Moonkind_Logo_zyoymo.jpg",
+    name: "Moonkind",
     duration: "Sep 2025 - Present",
-    description: ["Just getting started, will update after a while"],
-    role: "AI Product Engineer",
+    description: [
+      "Built V2 consumer side entire application in 3 weeks with sleek minamilist UI and some additional features. Check it out at www.moonkind.ai",
+    ],
+    role: "Senior Software Engineer",
   },
   {
-    img: "https://media.licdn.com/dms/image/v2/D560BAQEDTmEppqRjDQ/company-logo_200_200/company-logo_200_200/0/1698650842101/ai4bharat_logo?e=1758758400&v=beta&t=yZ6lOz3crgLuOSQBkyIvrTeT3gAc-TrF7_R_mb9qqOc",
+    img: "https://res.cloudinary.com/dli14hm5i/image/upload/v1759164994/AI4Bharat_Logo_b9pkk6.jpg",
     name: "AI4Bharat",
     duration: "Jan 2025 - Aug 2025",
     description: [
@@ -24,7 +26,7 @@ const PlacesArray = [
     role: "Software Engineer",
   },
   {
-    img: "https://media.licdn.com/dms/image/v2/C560BAQErwPfuX4inZQ/company-logo_200_200/company-logo_200_200/0/1636395753229/rhombuz_logo?e=1758758400&v=beta&t=R75FztEiITOpq2_2yyTviuPokfRbZlTIU59wUJSlNYE",
+    img: "https://res.cloudinary.com/dli14hm5i/image/upload/v1759164994/Rhombuz_Logo_lmfpeu.jpg",
     name: "Rhombuz",
     duration: "Jul 2023 - Dec 2024",
     description: [

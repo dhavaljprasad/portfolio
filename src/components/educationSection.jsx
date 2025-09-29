@@ -4,7 +4,7 @@ import Card from "./card";
 
 const EducationArray = [
   {
-    img: "https://media.licdn.com/dms/image/v2/C4D0BAQGqbSuxjLqtWQ/company-logo_200_200/company-logo_200_200/0/1659504006681/reachiitm_logo?e=1758758400&v=beta&t=dNjHz-3b4iUHBs6ndXyBPo_mhr-2obLrUz01KF-nmp4",
+    img: "https://res.cloudinary.com/dli14hm5i/image/upload/v1759164994/IIT_Madras_Logo_xz0ww4.jpg",
     name: "Indian Institute of Technology, Madras",
     duration: "Sep 2023 - Present",
     description: [
@@ -13,7 +13,7 @@ const EducationArray = [
     role: "Jumping b/w cs and ai",
   },
   {
-    img: "https://media.licdn.com/dms/image/v2/D560BAQES5xcGjJgVFg/company-logo_200_200/company-logo_200_200/0/1681284250031?e=1759363200&v=beta&t=W0rMvohJmna3wOqJ7L8c3_0A-UnMjs3KBt7lZEKIJlk",
+    img: "https://res.cloudinary.com/dli14hm5i/image/upload/v1759164993/JBA_Logo_dcgn5p.jpg",
     name: "JB Academy, Ayodhya",
     duration: "Apr 2008 - Mar 2023",
     description: [
