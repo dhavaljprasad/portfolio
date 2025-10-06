@@ -8,7 +8,8 @@ const PlacesArray = [
     name: "Moonkind",
     duration: "Sep 2025 - Present",
     description: [
-      "Built V2 consumer side entire application in 3 weeks with sleek minamilist UI and some additional features. Check it out at www.moonkind.ai",
+      "Built V2 consumer side entire application in 3 weeks with sleek minamilist UI and some additional features. Check it out at moonkind.ai",
+      "Share brain rot reels and tweets with marketing team",
     ],
     role: "Senior Software Engineer",
   },
