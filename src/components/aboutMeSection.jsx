@@ -13,6 +13,16 @@ const PlacesArray = [
     ],
     role: "Senior Software Engineer",
   },
+ {
+    img: "https://media.licdn.com/dms/image/v2/D560BAQG-MT9e4Yfneg/company-logo_200_200/B56ZgIpc7LHUAM-/0/1752491741699?e=1773273600&v=beta&t=1KsAY3PORtFanZDha0hJoxjlBpFrRuDkIJd0WlpyOe4",
+    name: "WriterPlay",
+    duration: "Sep 2025 - Present",
+    description: [
+      "working as design engineer for both consumer and writer platforms. if you have design issues on moonkind.ai or writer.moonkind.ai, feel free to ping me here or tag me on X",
+    ],
+    role: "Senior Software Engineer",
+  },
+
   {
     img: "https://res.cloudinary.com/dli14hm5i/image/upload/v1759164994/AI4Bharat_Logo_b9pkk6.jpg",
     name: "AI4Bharat",
@@ -41,6 +51,7 @@ const PlacesArray = [
     ],
     role: "Full Stack Developer",
   },
+  
 ];
 
 function AboutMeSection() {
