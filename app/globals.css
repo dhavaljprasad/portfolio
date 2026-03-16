@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* radius scale */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  /* semantic colors */
+  --color-background-primary: var(--background-primary);
+  --color-background-secondary: var(--background-secondary);
+  --color-background-ternary: var(--background-ternary);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+
+  --color-live: var(--live);
+  --color-danger: var(--danger);
+
+  --color-border: var(--background-ternary);
+  --color-ring: var(--live);
+}
+
+:root {
+  --background-primary: oklch(16.84% 0 0);
+  --background-secondary: oklch(26.45% 0 0);
+  --background-ternary: oklch(43.13% 0 0);
+
+  --text-primary: oklch(100% 0 0);
+  --text-secondary: oklch(71.55% 0 0);
+
+  --live: oklch(61.15% 0.208 142.5);
+  --danger: oklch(59.6% 0.245 29.23);
+
+  --radius: 8px;
+}
+
+.dark {
+  --background-primary: oklch(98.51% 0 0);
+  --background-secondary: oklch(99.97% 0.001 106.42);
+  --background-ternary: oklch(99.38% 0.013 130.77);
+
+  --text-primary: oklch(0% 0 0);
+  --text-secondary: oklch(71.55% 0 0);
+
+  --live: oklch(61.15% 0.208 142.5);
+  --danger: oklch(59.6% 0.245 29.23);
+
+  --radius: 8px;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background-primary text-text-primary;
+  }
+}
