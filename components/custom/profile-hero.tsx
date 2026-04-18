@@ -65,7 +65,7 @@ export const ProfileHero = () => {
   }, []);
 
   return (
-    <div className="w-full h-fit flex flex-col justify-center gap-2 rounded-sm relative">
+    <div className="w-full flex flex-col gap-4">
       {/* Video Banner */}
       <div className="w-full aspect-[2/1] sm:aspect-[4/1] md:aspect-[90/15] overflow-hidden rounded-sm">
         <video
@@ -73,51 +73,61 @@ export const ProfileHero = () => {
           loop
           muted
           className="w-full h-full object-cover object-right md:object-center"
-          src={
-            "https://res.cloudinary.com/dli14hm5i/video/upload/q_auto/f_auto/v1776383053/Portfolio_Banner_Video_r9otwn.mp4"
-          }
-        ></video>
+          src="https://res.cloudinary.com/dli14hm5i/video/upload/q_auto/f_auto/v1776383053/Portfolio_Banner_Video_r9otwn.mp4"
+        />
       </div>
 
-      {/* pfp image, name, age, socials, hire me button */}
-      <div className="w-full h-fit flex flex-col gap-4 items-center justify-center absolute sm:static md:absolute px-0 sm:px-4 md:px-10 top-[15vh] md:top-[15vh]">
-        <div className="w-full h-fit flex flex-col sm:flex-row gap-2 sm:gap-0 sm:flex-row items-center justify-between">
-          <div className="w-fit h-auto flex flex-col sm:flex-row items-center justify-start gap-2">
-            <div className="w-35 h-35 sm:w-20 sm:h-20 md:w-30 md:h-30 border border-4 border-background-primary rounded-sm">
+      {/* Content (overlapping using margin, NOT absolute) */}
+      <div className="w-full flex flex-col gap-4 items-center justify-center -mt-16 sm:-mt-8 md:-mt-10 ">
+        <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-4 px-2 sm:px-4 md:px-10">
+          {/* Left */}
+          <div className="flex flex-col sm:flex-row items-center gap-3">
+            <div className="w-28 h-28 sm:w-20 sm:h-20 md:w-28 md:h-28 border-4 border-background-primary rounded-sm overflow-hidden">
               <img
                 src="https://res.cloudinary.com/dli14hm5i/image/upload/v1773624270/ChatGPT_Image_Jan_15_2026_07_37_32_PM_abe9ai.png"
                 alt="dhaval's pfp"
-                className="w-full h-full object-cover rounded-sm"
+                className="w-full h-full object-cover"
               />
             </div>
 
-            <div className="w-auto flex flex-col items-center sm:items-start gap-1 md:mt-10">
-              <h1 className="text-2xl sm:text-2xl md:text-4xl font-bold">
+            <div className="flex flex-col items-center sm:items-start gap-1 sm:mt-6 md:mt-10">
+              <h1 className="text-2xl sm:text-2xl md:text-4xl font-bold text-center sm:text-left">
                 Dhaval J Prasad
               </h1>
               <span className="text-sm text-text-secondary">{time}</span>
             </div>
           </div>
 
-          <div className="w-fit h-auto flex flex-col items-center sm:items-end justify-center gap-2 md:mt-10">
+          {/* Right */}
+          <div className="flex flex-col items-center sm:items-end gap-2 sm:mt-6 md:mt-10">
             <PulsatingButton text="Hire Me Now" onClick={() => {}} />
 
-            <div className="flex items-center justify-center gap-2">
+            <div className="flex gap-3">
               {socialsData.map((social, index) => {
+                const Icon = social.icon;
                 return (
-                  <social.icon
-                    size={22}
+                  <a
                     key={index}
-                    // onClick={()=>}
-                    className="text-background-ternary hover:text-white cursor-pointer"
-                  />
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Icon
+                      size={20}
+                      className="text-background-ternary hover:text-white cursor-pointer transition-colors"
+                    />
+                  </a>
                 );
               })}
             </div>
           </div>
         </div>
-        <p className="text-text-secondary text-justify text-base sm:text-sm md:text-base">
-          <span className="text-text-primary">Senior Software Engineer</span>{" "}
+
+        {/* Description */}
+        <p className="text-text-secondary text-sm sm:text-sm md:text-base text-justify w-full">
+          <span className="text-text-primary font-semibold">
+            Senior Software Engineer
+          </span>{" "}
           building production-grade web platforms, AI-powered products, and
           scalable systems. Experienced in Next.js, React, FastAPI, and
           distributed backend architectures. I focus on clean UI, performance,
@@ -125,18 +135,6 @@ export const ProfileHero = () => {
           data-heavy dashboards and automation pipelines.
         </p>
       </div>
-
-      {/* extensive description */}
-      {/* <div className="">
-        <p className="text-text-secondary text-justify text-base sm:text-sm md:text-base">
-          <span className="text-text-primary">Senior Software Engineer</span>{" "}
-          building production-grade web platforms, AI-powered products, and
-          scalable systems. Experienced in Next.js, React, FastAPI, and
-          distributed backend architectures. I focus on clean UI, performance,
-          and shipping real products—from GenAI agents and RAG systems to
-          data-heavy dashboards and automation pipelines.
-        </p>
-      </div> */}
     </div>
   );
 };

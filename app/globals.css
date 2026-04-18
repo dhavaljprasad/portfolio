@@ -40,6 +40,7 @@
   --live: oklch(61.15% 0.208 142.5);
   --danger: oklch(59.6% 0.245 29.23);
 
+  --accent: oklch(33.94% 0.227 264.16);
   --radius: 8px;
 }
 
@@ -54,6 +55,7 @@
   --live: oklch(61.15% 0.208 142.5);
   --danger: oklch(59.6% 0.245 29.23);
 
+  --accent: oklch(33.94% 0.227 264.16);
   --radius: 8px;
 }
 
