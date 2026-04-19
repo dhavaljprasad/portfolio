@@ -216,7 +216,7 @@ export const ExperienceCard = ({
       </div>
 
       <div
-        className={`w-full flex flex-col pl-20 gap-2 overflow-hidden transition-all duration-500 ease-in-out ${expanded ? "max-h-[50rem] opacity-100 mt-2" : "max-h-0 opacity-0"}
+        className={`w-full flex flex-col pl-16 sm:pl-14 md:pl-20 gap-2 overflow-hidden transition-all duration-500 ease-in-out ${expanded ? "max-h-[50rem] opacity-100 mt-2" : "max-h-0 opacity-0"}
   `}
       >
         {data.pointers.map((items, index) => {
