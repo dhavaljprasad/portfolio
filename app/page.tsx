@@ -3,6 +3,7 @@
 import { GithubContributions } from "@/components/custom/contributions";
 import { ExperienceSection } from "@/components/custom/experience";
 import { ProfileHero } from "@/components/custom/profile-hero";
+import { TechStackSection } from "@/components/custom/tech-stack";
 
 export default function Page() {
   return (
@@ -11,6 +12,7 @@ export default function Page() {
         <ProfileHero />
         <GithubContributions />
         <ExperienceSection />
+        <TechStackSection />
       </div>
     </div>
   );
