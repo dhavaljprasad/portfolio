@@ -223,7 +223,7 @@ export const ExperienceCard = ({
           return (
             <li
               key={index}
-              className="text-sm sm:text-sm text-text-secondary hover:text-text-primary"
+              className="text-xs sm:text-sm text-text-secondary hover:text-text-primary"
             >
               {items}
             </li>
