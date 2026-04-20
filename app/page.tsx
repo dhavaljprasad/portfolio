@@ -4,6 +4,7 @@ import { GithubContributions } from "@/components/custom/contributions";
 import { ExperienceSection } from "@/components/custom/experience";
 import { ProfileHero } from "@/components/custom/profile-hero";
 import { TechStackSection } from "@/components/custom/tech-stack";
+import { WorkTogetherSection } from "@/components/custom/work-together";
 
 export default function Page() {
   return (
@@ -13,6 +14,7 @@ export default function Page() {
         <GithubContributions />
         <ExperienceSection />
         <TechStackSection />
+        <WorkTogetherSection />
       </div>
     </div>
   );
