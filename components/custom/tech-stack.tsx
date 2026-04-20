@@ -100,7 +100,9 @@ const bottomRowData = [
 export const TechStackSection = () => {
   return (
     <div className="w-full h-fit flex flex-col items-start justify-center gap-2">
-      <h2 className="text-xl font-semibold text-text-primary">Tech Stack</h2>
+      <h2 className="text-xl font-semibold text-text-primary">
+        Technology & Tools
+      </h2>
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
         <Marquee pauseOnHover className="[--duration:20s]">
           {topRowData.map((item) => (
@@ -114,7 +116,7 @@ export const TechStackSection = () => {
         </Marquee>
 
         <div className="from-background-primary pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r"></div>
-        <div className="from-background pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l"></div>
+        <div className="from-background-primary pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l"></div>
       </div>
     </div>
   );

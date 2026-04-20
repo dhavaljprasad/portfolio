@@ -24,7 +24,7 @@ const socialsData = [
   {
     name: "LinkedIn",
     icon: FaLinkedinIn,
-    url: "https://www.linkedin.com/in/dhavaljprasad/",
+    url: "https://www.linkedin.com/in/dhaval-j-prasad/",
   },
 ];
 
@@ -64,6 +64,10 @@ export const ProfileHero = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const navigateToHireMe = () => {
+    window.open("https://t.me/dhavaljprasad", "_blank", "noopener");
+  };
+
   return (
     <div className="w-full flex flex-col gap-4">
       {/* Video Banner */}
@@ -100,7 +104,10 @@ export const ProfileHero = () => {
 
           {/* Right */}
           <div className="flex flex-col items-center sm:items-end gap-2 sm:mt-6 md:mt-10">
-            <PulsatingButton text="Hire Me Now" onClick={() => {}} />
+            <PulsatingButton
+              text="Hire Me Now"
+              onClick={() => navigateToHireMe()}
+            />
 
             <div className="flex gap-3">
               {socialsData.map((social, index) => {
